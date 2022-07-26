@@ -1,6 +1,23 @@
 # Changelog
 
 ## Unreleased
+## 1.27.1 (2022-07-22)
+### Bug Fixes
+- **Auth:** Mapping correct error when Device Operations fail due to user not signed in (#2023).
+
+## 1.27.0 (2022-07-14)
+
+### Features
+
+- **api**: AppSyncRTC 2.0.0 upgrade - Handle unauthorized connection (#1994)
+
+### Bug Fixes
+
+- **Auth**: Handling proper error when attempting to change password fails due to an expired session. (#1995)
+- **datastore**: stop sync engine on non-retryable errors to allow restart (#1901)
+- **datastore**: query for missing optional associations (#1849)
+- **datastore**: Test schema drift does not restart sync engine (#1868)
+
 ## 1.26.2 (2022-06-10)
 
 ### Bug Fixes
